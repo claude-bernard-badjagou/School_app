@@ -7,7 +7,7 @@ def afficher_make_visualisation():
     st.set_page_config(layout="wide")
 
     # Chargement des données prétraitées dans data manipulation
-    df = pk.load(open("data_preprocessed.pkl", "rb"))
+    df = pk.load(open("school_app/data_preprocessed.pkl", "rb"))
 
 
     # Ajouter un titre
