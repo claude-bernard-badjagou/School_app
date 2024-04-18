@@ -1,10 +1,9 @@
 import pickle as pk
 import streamlit as st
-import pandas as pd
 
 def afficher_driven_decision():
     # Charger les données prétraitées dans data manpulation
-    df = pk.load(open("data_preprocessed.pkl", "rb"))
+    df = pk.load(open("school_app/data_preprocessed.pkl", "rb"))
 
     # Titre de la page
     st.title("Prise de décision en se basant sur les données")
