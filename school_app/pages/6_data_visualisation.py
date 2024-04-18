@@ -7,7 +7,7 @@ def afficher_data_visualisation():
     st.title("Data Visualization")
 
     # Chargement du fichier
-    df = pk.load(open("data_preprocessed.pkl", "rb"))
+    df = pk.load(open("school_app/data_preprocessed.pkl", "rb"))
 
 
     # Question 1: Quelle est la répartition des notes en maths parmi les étudiants ?
