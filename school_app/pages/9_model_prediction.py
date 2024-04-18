@@ -22,7 +22,7 @@ def afficher_model_prediction():
 
 
     # Chargement des données
-    df = pk.load(open("data_preprocessed.pkl", "rb"))
+    df = pk.load(open("school_app/data_preprocessed.pkl", "rb"))
 
 
     # Ajout de la colonne "admis_numeric" et mention_numérique
