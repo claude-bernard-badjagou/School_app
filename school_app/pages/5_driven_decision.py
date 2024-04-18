@@ -1,5 +1,6 @@
 import pickle as pk
 import streamlit as st
+import pandas as pd
 
 def afficher_driven_decision():
     # Charger les données prétraitées dans data manpulation
