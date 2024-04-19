@@ -31,14 +31,21 @@ def afficher_data_modelisation():
     df['mention_numeric'] = df['mention'].map({'refusée': 0, 'passable': 1,
                                                'assez bien': 2, 'bien': 3, 'très bien': 4, 'excellent': 5})
 
-    # Créer un bouton pour afficher un message d'information
+   # Créer un bouton pour afficher un message d'information
     if st.checkbox("**Cliquez ici pour masquer l'information**", value=True):
         # display the text if the checkbox returns True value
-        st.write("""**Le résultat du modèle choisi sera affiché en bas de cette information** \n
-        Sur cette page vous pouvez faire de la prédiction . Ainsi, lorsque vous exécutez ce \n
-        code, le texte sera affiché par défaut car la case à cocher sera cochée initialement. 
-        L'utilisateur peut ensuite décocher la case à cocher pour masquer le texte.
-        """)
+        st.info("**6 algorithmes de machine learning et de deep learning sont disponibles sur cette page**")
+        st.success("""**Le résultat du modèle choisi sera affiché en bas de cette information**. 
+        **Sur cette page vous pouvez faire de la prédiction ou de la classification**.""")
+        st.write("""
+        La **regression linéaire simple** pour prédire la note en **data_exploration** en fonction de la note en **maths**.
+        \nLa **regression linéaire multiple** pour prédire la **moyenne** en fonction des notes des différentes **matières**.
+        \nLa **regression logistique** pour prédire l'admissibilité (**admis**) en fonction de la **moyenne**.
+        \nLe **Random forest** pour classifier la **mention** en fonction de la **moyenne**.
+        \nLe **Support vecteur Machin** pour classifier la **mention** en fonction de la **moyenne**.
+        \n**ANN ou DNN** pour classifier la **mention** en fonction des notes dans les différentes **matières**.
+                """)
+
 
 
     # Les modèles disponibles
