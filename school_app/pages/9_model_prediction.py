@@ -150,7 +150,8 @@ def afficher_model_prediction():
             model = LinearRegression()
             # Entrainer le model
             model.fit(x_train, y_train)
-
+            st.write(model.model.coef_)
+            st.write(model.intercept_)
             # Convertir les valeurs des caractéristiques en un tableau 2D
             notes = [[note['sql'], note['excel'], note['maths'], note['python'],
                                note['poo'], note['tableau'], note['data_exploration'],
