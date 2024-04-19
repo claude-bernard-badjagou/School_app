@@ -75,6 +75,7 @@ def afficher_data_manipulation():
     # Enregistrement de l'année dans une colonne séparée
     df['annee'] = df['date'].dt.year
     st.info("8. L'année est enregistrée dans une colonne séparée pour faciliter la visualisation des données par année")
+    st.write(df.head())
 
 
     # Enregistrer les données prétraitées
