@@ -50,7 +50,7 @@ def afficher_about_us():
         st.header("Pourquoi Nous Choisir")
         st.write("Lorsque vous travaillez avec nous, vous bénéficiez de l'expertise d'une équipe dévouée et passionnée, prête à relever les défis les plus complexes en matière de data science. Nous sommes à l'écoute de vos besoins et nous nous engageons à fournir des solutions personnalisées et innovantes qui répondent à vos objectifs commerciaux. Que vous soyez une start-up ambitieuse ou une entreprise établie, nous sommes là pour vous aider à libérer le potentiel de vos données et à prendre des décisions éclairées pour l'avenir de votre entreprise.")
 
-        st.write("[Nous contacter](http://localhost:8501/Nous_contacter)")
+        st.write("[Nous contacter avec un model de messagerie](https://schoolapp.streamlit.app/nous_contacter)")
         st.write("**Adresse e-mail :** ibadjagou@gmail.com")
         st.markdown("**Téléphone :** [+225 05 54 47 30 01](tel:+2250554473001)")
         st.write("**Localisation :** [Cocody, Rond Point Palméraie]")
