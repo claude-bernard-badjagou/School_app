@@ -1,5 +1,5 @@
 import streamlit as st
-import folium
+#import folium
 
 
 def afficher_nous_contacter():
